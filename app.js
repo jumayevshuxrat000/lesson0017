@@ -142,3 +142,49 @@
     console.log(getSum(3, 3));  
     console.log(getSum(-3, -1)); 
 }
+function filterPositiveNumbers(arr) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > 0) {
+        result.push(arr[i]);
+      }
+    }
+    return result;
+  }
+  
+  function capitalizeFirstLetter(str) {
+    let words = str.split(" ");
+    for (let i = 0; i < words.length; i++) {
+      words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+    }
+    return words.join(" ");
+  }
+  function reverseNumber(num) {
+    let str = String(num);
+    let reversed = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+      reversed += str[i];
+    }
+    return Number(reversed);
+  }
+
+  function filterFalseValues(arr) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === false) {
+        result.push(arr[i]);
+      }
+    }
+    return result;
+  }
+  
+  function sumPositiveNumbers(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > 0) {
+        sum += arr[i];
+      }
+    }
+    return sum;
+  }
+  
