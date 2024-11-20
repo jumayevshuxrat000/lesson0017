@@ -27,7 +27,7 @@
 
 //Note: Meta programming is not allowed in this kata. So, the size of your solution is limited
 {
-    const STRANGE_STRING = "ß"
+    const STRANGE_STRING = "b"
 }
 
 
